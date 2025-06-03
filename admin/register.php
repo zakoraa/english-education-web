@@ -87,17 +87,11 @@ if(isset($message)){
             <p>Profesi <span>*</span></p>
             <select name="profession" class="box" required>
                <option value="" disabled selected>-- Pilih profesi</option>
-               <option value="developer">Developer</option>
-               <option value="desginer">Designer</option>
-               <option value="musician">Musisi</option>
-               <option value="biologist">Pakar biologi</option>
-               <option value="teacher">Guru</option>
-               <option value="engineer">Teknisi</option>
-               <option value="lawyer">Pengacara</option>
-               <option value="accountant">Akuntan</option>
-               <option value="doctor">Dokter</option>
-               <option value="journalist">Jurnalis</option>
-               <option value="photographer">Fotografer</option>
+               <option value="Guru Matematika">Guru Matematika</option>
+               <option value="Guru PJOK">PJOK</option>
+               <option value="Guru Bahasa Inggris">Guru Bahasa Inggris</option>
+               <option value="Guru Bahasa Indonesia">Guru Bahasa Indonesia</option>
+               <option value="Guru Agama">Guru Agama</option>
             </select>
             <p>Email <span>*</span></p>
             <input type="email" name="email" placeholder="Masukkan email" maxlength="20" required class="box">

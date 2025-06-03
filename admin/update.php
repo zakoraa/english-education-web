@@ -58,8 +58,8 @@ if(isset($_POST['submit'])){
    $image_folder = '../uploaded_files/'.$rename;
 
    if(!empty($image)){
-      if($image_size > 2000000){
-         $message[] = 'image size too large!';
+      if($image_size > 40000000){
+         $message[] = 'Ukuran gambar terlalu besar!';
       }else{
          $update_image = $conn->prepare("UPDATE `tutors` SET `image` = ? WHERE id = ?");
          $update_image->execute([$rename, $tutor_id]);
@@ -81,7 +81,7 @@ if(isset($_POST['submit'])){
 
    if($old_pass != $empty_pass){
       if($old_pass != $prev_pass){
-         $message[] = 'old password not matched!';
+         $message[] = 'Kata sandi lama tidak cocok!';
       }elseif($new_pass != $cpass){
          $message[] = 'Konfirmasi kata sandi tidak cocok!';
       }else{
@@ -131,17 +131,11 @@ if(isset($_POST['submit'])){
             <p>Profesi </p>
             <select name="profession" class="box">
                <option value="" selected><?= $fetch_profile['profession']; ?></option>
-               <option value="developer">Developer</option>
-               <option value="desginer">Designer</option>
-               <option value="musician">Musisi</option>
-               <option value="biologist">Pakar biologi</option>
-               <option value="teacher">Guru</option>
-               <option value="engineer">Teknisi</option>
-               <option value="lawyer">Pengacara</option>
-               <option value="accountant">Akuntan</option>
-               <option value="doctor">Dokter</option>
-               <option value="journalist">Jurnalis</option>
-               <option value="photographer">Fotografer</option>
+              <option value="Guru Matematika">Guru Matematika</option>
+               <option value="Guru PJOK">PJOK</option>
+               <option value="Guru Bahasa Inggris">Guru Bahasa Inggris</option>
+               <option value="Guru Bahasa Indonesia">Guru Bahasa Indonesia</option>
+               <option value="Guru Agama">Guru Agama</option>
             </select>
             <p>Email </p>
             <input type="email" name="email" placeholder="<?= $fetch_profile['email']; ?>" maxlength="20"  class="box">
