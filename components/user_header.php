@@ -15,10 +15,10 @@ if(isset($message)){
 
    <section class="flex">
 
-      <a href="home.php" class="logo">English Education.</a>
+      <a href="home.php" class="logo">Edukasi Bahasa Inggris.</a>
 
       <form action="search_course.php" method="post" class="search-form">
-         <input type="text" name="search_course" placeholder="search courses..." required maxlength="100">
+         <input type="text" name="search_course" placeholder="Cari materi..." required maxlength="100">
          <button type="submit" class="fas fa-search" name="search_course_btn"></button>
       </form>
 
@@ -38,20 +38,20 @@ if(isset($message)){
          ?>
          <img src="uploaded_files/<?= $fetch_profile['image']; ?>" alt="">
          <h3><?= $fetch_profile['name']; ?></h3>
-         <span>student</span>
-         <a href="profile.php" class="btn">view profile</a>
+         <span>Siswa</span>
+         <a href="profile.php" class="btn">Lihat profil</a>
          <div class="flex-btn">
-            <a href="login.php" class="option-btn">login</a>
-            <a href="register.php" class="option-btn">register</a>
+            <a href="login.php" class="option-btn">Login</a>
+            <a href="register.php" class="option-btn">Register</a>
          </div>
-         <a href="components/user_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
+         <a href="components/user_logout.php" onclick="return confirm('Keluar dari website ini?');" class="delete-btn">logout</a>
          <?php
             }else{
          ?>
-         <h3>please login or register</h3>
+         <h3>Silakan Login atau Register</h3>
           <div class="flex-btn">
-            <a href="login.php" class="option-btn">login</a>
-            <a href="register.php" class="option-btn">register</a>
+            <a href="login.php" class="option-btn">Login</a>
+            <a href="register.php" class="option-btn">Register</a>
          </div>
          <?php
             }
@@ -81,15 +81,15 @@ if(isset($message)){
          ?>
          <img src="uploaded_files/<?= $fetch_profile['image']; ?>" alt="">
          <h3><?= $fetch_profile['name']; ?></h3>
-         <span>student</span>
-         <a href="profile.php" class="btn">view profile</a>
+         <span>Siswa</span>
+         <a href="profile.php" class="btn">Lihat profil</a>
          <?php
             }else{
          ?>
-         <h3>please login or register</h3>
+         <h3>Silakan Login atau Register</h3>
           <div class="flex-btn" style="padding-top: .5rem;">
-            <a href="login.php" class="option-btn">login</a>
-            <a href="register.php" class="option-btn">register</a>
+            <a href="login.php" class="option-btn">Login</a>
+            <a href="register.php" class="option-btn">Register</a>
          </div>
          <?php
             }
@@ -97,10 +97,10 @@ if(isset($message)){
       </div>
 
    <nav class="navbar">
-      <a href="home.php"><i class="fas fa-home"></i><span>home</span></a>
-      <a href="about.php"><i class="fas fa-question"></i><span>about us</span></a>
-      <a href="courses.php"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-      <a href="teachers.php"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="home.php"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.php"><i class="fas fa-question"></i><span>Tentang kami</span></a>
+      <a href="courses.php"><i class="fas fa-graduation-cap"></i><span>Materi</span></a>
+      <a href="teachers.php"><i class="fas fa-chalkboard-user"></i><span>Guru</span></a>
    </nav>
 
 </div>

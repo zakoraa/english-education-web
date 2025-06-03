@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
       }
    } 
 
-   $message[] = 'playlist updated!';  
+   $message[] = 'Playlist telah diperbarui!';  
 
 }
 
@@ -92,7 +92,7 @@ if(isset($_POST['delete'])){
    
 <section class="playlist-form">
 
-   <h1 class="heading">update playlist</h1>
+   <h1 class="heading">Update playlist</h1>
 
    <?php
          $select_playlist = $conn->prepare("SELECT * FROM `playlist` WHERE id = ?");
@@ -106,16 +106,16 @@ if(isset($_POST['delete'])){
       ?>
    <form action="" method="post" enctype="multipart/form-data">
       <input type="hidden" name="old_image" value="<?= $fetch_playlist['thumb']; ?>">
-      <p>playlist status <span>*</span></p>
+      <p>Status playlist <span>*</span></p>
       <select name="status" class="box" required>
          <option value="<?= $fetch_playlist['status']; ?>" selected><?= $fetch_playlist['status']; ?></option>
-         <option value="active">active</option>
-         <option value="deactive">deactive</option>
+         <option value="active">aktif</option>
+         <option value="deactive">nonaktif</option>
       </select>
-      <p>playlist title <span>*</span></p>
-      <input type="text" name="title" maxlength="100" required placeholder="enter playlist title" value="<?= $fetch_playlist['title']; ?>" class="box">
-      <p>playlist description <span>*</span></p>
-      <textarea name="description" class="box" required placeholder="write description" maxlength="1000" cols="30" rows="10"><?= $fetch_playlist['description']; ?></textarea>
+      <p>Judul playlist <span>*</span></p>
+      <input type="text" name="title" maxlength="100" required placeholder="Masukkan judul playlist" value="<?= $fetch_playlist['title']; ?>" class="box">
+      <p>Deskripsi playlist<span>*</span></p>
+      <textarea name="description" class="box" required placeholder="Tulis deskripsi" maxlength="1000" cols="30" rows="10"><?= $fetch_playlist['description']; ?></textarea>
       <p>playlist thumbnail <span>*</span></p>
       <div class="thumb">
          <span><?= $total_videos; ?></span>
@@ -124,14 +124,14 @@ if(isset($_POST['delete'])){
       <input type="file" name="image" accept="image/*" class="box">
       <input type="submit" value="update playlist" name="submit" class="btn">
       <div class="flex-btn">
-         <input type="submit" value="delete" class="delete-btn" onclick="return confirm('delete this playlist?');" name="delete">
-         <a href="view_playlist.php?get_id=<?= $playlist_id; ?>" class="option-btn">view playlist</a>
+         <input type="submit" value="delete" class="delete-btn" onclick="return confirm('Hapus playlist ini?');" name="delete">
+         <a href="view_playlist.php?get_id=<?= $playlist_id; ?>" class="option-btn">Lihat playlist</a>
       </div>
    </form>
    <?php
       } 
    }else{
-      echo '<p class="empty">no playlist added yet!</p>';
+      echo '<p class="empty">Belum ada playlist yang ditambahkan!</p>';
    }
    ?>
 

@@ -53,9 +53,9 @@ if(isset($_POST['delete_comment'])){
    if($verify_comment->rowCount() > 0){
       $delete_comment = $conn->prepare("DELETE FROM `comments` WHERE id = ?");
       $delete_comment->execute([$delete_id]);
-      $message[] = 'comment deleted successfully!';
+      $message[] = 'Komentar berhasil dihapus!';
    }else{
-      $message[] = 'comment already deleted!';
+      $message[] = 'Komentar telah dihapus!';
    }
 
 }
@@ -68,7 +68,7 @@ if(isset($_POST['delete_comment'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>view content</title>
+   <title>Lihat konten</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -119,7 +119,7 @@ if(isset($_POST['delete_comment'])){
    <?php
     }
    }else{
-      echo '<p class="empty">no contents added yet! <a href="add_content.php" class="btn" style="margin-top: 1.5rem;">add videos</a></p>';
+      echo '<p class="empty">Belum ada konten yang ditambahkan! <a href="add_content.php" class="btn" style="margin-top: 1.5rem;">add videos</a></p>';
    }
       
    ?>
@@ -128,7 +128,7 @@ if(isset($_POST['delete_comment'])){
 
 <section class="comments">
 
-   <h1 class="heading">user comments</h1>
+   <h1 class="heading">Komentar pengguna</h1>
 
    
    <div class="show-comments">
@@ -158,7 +158,7 @@ if(isset($_POST['delete_comment'])){
       <?php
        }
       }else{
-         echo '<p class="empty">no comments added yet!</p>';
+         echo '<p class="empty">Belum ada komentar!</p>';
       }
       ?>
       </div>

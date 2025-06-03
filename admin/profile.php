@@ -33,7 +33,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Profile</title>
+   <title>Profil</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -48,35 +48,35 @@
    
 <section class="tutor-profile" style="min-height: calc(100vh - 19rem);"> 
 
-   <h1 class="heading">profile details</h1>
+   <h1 class="heading">Detail profil</h1>
 
    <div class="details">
       <div class="tutor">
          <img src="../uploaded_files/<?= $fetch_profile['image']; ?>" alt="">
          <h3><?= $fetch_profile['name']; ?></h3>
          <span><?= $fetch_profile['profession']; ?></span>
-         <a href="update.php" class="inline-btn">update profile</a>
+         <a href="update.php" class="inline-btn">Ubah profil</a>
       </div>
       <div class="flex">
          <div class="box">
             <span><?= $total_playlists; ?></span>
-            <p>total playlists</p>
-            <a href="playlists.php" class="btn">view playlists</a>
+            <p>Total playlist</p>
+            <a href="playlists.php" class="btn">Lihat playlist</a>
          </div>
          <div class="box">
             <span><?= $total_contents; ?></span>
-            <p>total videos</p>
-            <a href="contents.php" class="btn">view contents</a>
+            <p>Total video</p>
+            <a href="contents.php" class="btn">Lihat konten</a>
          </div>
          <div class="box">
             <span><?= $total_likes; ?></span>
-            <p>total likes</p>
-            <a href="contents.php" class="btn">view contents</a>
+            <p>Total suka</p>
+            <a href="contents.php" class="btn">Lihat konten</a>
          </div>
          <div class="box">
             <span><?= $total_comments; ?></span>
-            <p>total comments</p>
-            <a href="comments.php" class="btn">view comments</a>
+            <p>Total komentar</p>
+            <a href="comments.php" class="btn">Lihat komentar</a>
          </div>
       </div>
    </div>
