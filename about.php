@@ -47,59 +47,48 @@ if(isset($_COOKIE['user_id'])){
 
    <div class="team-container">
       <div class="team-card">
-         <img src="images/anggota1.jpg" alt="Anggota 1">
-         <h4>Andi Wijaya</h4>
-         <p>NIM: 1234567890</p>
+         <h4 class="member-name">Henri Donand K</h4>
+         <p class="member-nim">NIM: L200220092</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota2.jpg" alt="Anggota 2">
-         <h4>Budi Santoso</h4>
-         <p>NIM: 1234567891</p>
+         <h4 class="member-name">Fachrizal Irfansyah El Zacky </h4>
+         <p class="member-nim">NIM: L200220120</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota3.jpg" alt="Anggota 3">
-         <h4>Citra Lestari</h4>
-         <p>NIM: 1234567892</p>
+         <h4 class="member-name">Aldino Dewa Ndaru</h4>
+         <p class="member-nim">NIM: L200220173</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota1.jpg" alt="Anggota 1">
-         <h4>Andi Wijaya</h4>
-         <p>NIM: 1234567890</p>
+         <h4 class="member-name">Ammar Miftahudin Anshori</h4>
+         <p class="member-nim">NIM: L200230270</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota2.jpg" alt="Anggota 2">
-         <h4>Budi Santoso</h4>
-         <p>NIM: 1234567891</p>
+         <h4 class="member-name">Mhd. Farhan Lubis</h4>
+         <p class="member-nim">NIM: L200220277</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota3.jpg" alt="Anggota 3">
-         <h4>Citra Lestari</h4>
-         <p>NIM: 1234567892</p>
+         <h4 class="member-name">Muhammad Rafli Silehu</h4>
+         <p class="member-nim">NIM: L200220267</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota1.jpg" alt="Anggota 1">
-         <h4>Andi Wijaya</h4>
-         <p>NIM: 1234567890</p>
+         <h4 class="member-name">Alfian Candra Irwana</h4>
+         <p class="member-nim">NIM: L200220156</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota2.jpg" alt="Anggota 2">
-         <h4>Budi Santoso</h4>
-         <p>NIM: 1234567891</p>
+         <h4 class="member-name"> Iqbal Firmansyah</h4>
+         <p class="member-nim">NIM: L200220180</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota3.jpg" alt="Anggota 3">
-         <h4>Citra Lestari</h4>
-         <p>NIM: 1234567892</p>
+         <h4 class="member-name">Muhammad Alief Adhitya Pratama</h4>
+         <p class="member-nim">NIM: L200220281</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota2.jpg" alt="Anggota 2">
-         <h4>Budi Santoso</h4>
-         <p>NIM: 1234567891</p>
+         <h4 class="member-name">As'ad Nirot Ahmadi</h4>
+         <p class="member-nim">NIM: L200220155</p>
       </div>
       <div class="team-card">
-         <img src="images/anggota3.jpg" alt="Anggota 3">
-         <h4>Citra Lestari</h4>
-         <p>NIM: 1234567892</p>
+         <h4 class="member-name">Rehal Naya Putra</h4>
+         <p class="member-nim">NIM: L200220160</p>
       </div>
       <!-- Tambahkan anggota lain di sini -->
    </div>
