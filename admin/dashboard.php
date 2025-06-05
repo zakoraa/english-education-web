@@ -21,10 +21,6 @@ $select_likes = $conn->prepare("SELECT * FROM `likes` WHERE tutor_id = ?");
 $select_likes->execute([$tutor_id]);
 $total_likes = $select_likes->rowCount();
 
-$select_comments = $conn->prepare("SELECT * FROM `comments` WHERE tutor_id = ?");
-$select_comments->execute([$tutor_id]);
-$total_comments = $select_comments->rowCount();
-
 ?>
 
 <!DOCTYPE html>
@@ -74,12 +70,6 @@ $total_comments = $select_comments->rowCount();
          <h3><?= $total_likes; ?></h3>
          <p>Total suka</p>
          <a href="contents.php" class="btn">Lihat konten</a>
-      </div>
-
-      <div class="box">
-         <h3><?= $total_comments; ?></h3>
-         <p>Total komentar</p>
-         <a href="comments.php" class="btn">Lihat komentar</a>
       </div>
 
       <div class="box">

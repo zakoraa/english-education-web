@@ -30,10 +30,6 @@ if(isset($_POST['tutor_fetch'])){
    $count_likes->execute([$tutor_id]);
    $total_likes = $count_likes->rowCount();
 
-   $count_comments = $conn->prepare("SELECT * FROM `comments` WHERE tutor_id = ?");
-   $count_comments->execute([$tutor_id]);
-   $total_comments = $count_comments->rowCount();
-
 }else{
    header('location:teachers.php');
 }
@@ -76,7 +72,6 @@ if(isset($_POST['tutor_fetch'])){
          <p>Total playlist : <span><?= $total_playlists; ?></span></p>
          <p>Total video : <span><?= $total_contents; ?></span></p>
          <p>Total suka : <span><?= $total_likes; ?></span></p>
-         <p>Total komentar : <span><?= $total_comments; ?></span></p>
       </div>
    </div>
 

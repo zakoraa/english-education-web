@@ -12,14 +12,6 @@ $select_likes = $conn->prepare("SELECT * FROM `likes` WHERE user_id = ?");
 $select_likes->execute([$user_id]);
 $total_likes = $select_likes->rowCount();
 
-$select_comments = $conn->prepare("SELECT * FROM `comments` WHERE user_id = ?");
-$select_comments->execute([$user_id]);
-$total_comments = $select_comments->rowCount();
-
-$select_bookmark = $conn->prepare("SELECT * FROM `bookmark` WHERE user_id = ?");
-$select_bookmark->execute([$user_id]);
-$total_bookmarked = $select_bookmark->rowCount();
-
 ?>
 
 <!DOCTYPE html>
@@ -53,13 +45,9 @@ $total_bookmarked = $select_bookmark->rowCount();
          if($user_id != ''){
       ?>
       <div class="box">
-         <h3 class="title">Suka dan Komentar</h3>
+         <h3 class="title">Suka</h3>
          <p>Total suka : <span><?= $total_likes; ?></span></p>
          <a href="likes.php" class="inline-btn">Lihat suka</a>
-         <p>Total komentar : <span><?= $total_comments; ?></span></p>
-         <a href="comments.php" class="inline-btn">Lihat komentar</a>
-         <p>Playlist tersimpan : <span><?= $total_bookmarked; ?></span></p>
-         <a href="bookmark.php" class="inline-btn">Lihat penanda</a>
       </div>
       <?php
          }else{ 

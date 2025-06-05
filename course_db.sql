@@ -24,32 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bookmark`
---
 
-CREATE TABLE `bookmark` (
-  `user_id` varchar(20) NOT NULL,
-  `playlist_id` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `comments`
---
-
-CREATE TABLE `comments` (
-  `id` varchar(20) NOT NULL,
-  `content_id` varchar(20) NOT NULL,
-  `user_id` varchar(20) NOT NULL,
-  `tutor_id` varchar(20) NOT NULL,
-  `comment` varchar(1000) NOT NULL,
-  `date` DATETIME NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `contact`
 --
 
@@ -139,3 +114,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+contact
