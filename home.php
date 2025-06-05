@@ -63,31 +63,6 @@ $total_likes = $select_likes->rowCount();
       }
       ?>
 
-      <div class="box">
-         <h3 class="title">Kategori Teratas</h3>
-         <div class="flex">
-            <a href="search_course.php?"><i class="fas fa-code"></i><span>Development</span></a>
-            <a href="#"><i class="fas fa-chart-simple"></i><span>Bisnis</span></a>
-            <a href="#"><i class="fas fa-pen"></i><span>Design</span></a>
-            <a href="#"><i class="fas fa-chart-line"></i><span>Marketing</span></a>
-            <a href="#"><i class="fas fa-music"></i><span>Musik</span></a>
-            <a href="#"><i class="fas fa-camera"></i><span>Fotografi</span></a>
-            <a href="#"><i class="fas fa-cog"></i><span>Software</span></a>
-            <a href="#"><i class="fas fa-vial"></i><span>Sains</span></a>
-         </div>
-      </div>
-
-      <div class="box">
-         <h3 class="title">Tema Populer</h3>
-         <div class="flex">
-            <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
-            <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
-            <a href="#"><i class="fab fa-js"></i><span>Javascript</span></a>
-            <a href="#"><i class="fab fa-react"></i><span>React</span></a>
-            <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
-            <a href="#"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></a>
-         </div>
-      </div>
 
       <div class="box tutor">
          <h3 class="title">Jadi seorang tutor</h3>

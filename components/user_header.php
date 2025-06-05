@@ -17,16 +17,10 @@ if(isset($message)){
 
       <a href="home.php" class="logo">Edukasi Bahasa Inggris.</a>
 
-      <form action="search_course.php" method="post" class="search-form">
-         <input type="text" name="search_course" placeholder="Cari materi..." required maxlength="100">
-         <button type="submit" class="fas fa-search" name="search_course_btn"></button>
-      </form>
-
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
+         <div id="search-btn" class="fas fa-search"></div> <!-- Ketika ini di hapus btn menu jadi gak bisa dipake -->
          <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
       </div>
 
       <div class="profile">
