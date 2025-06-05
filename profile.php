@@ -12,11 +12,6 @@ if(isset($_COOKIE['user_id'])){
 $select_likes = $conn->prepare("SELECT * FROM `likes` WHERE user_id = ?");
 $select_likes->execute([$user_id]);
 $total_likes = $select_likes->rowCount();
-
-$select_bookmark = $conn->prepare("SELECT * FROM `bookmark` WHERE user_id = ?");
-$select_bookmark->execute([$user_id]);
-$total_bookmarked = $select_bookmark->rowCount();
-
 ?>
 
 <!DOCTYPE html>
@@ -52,18 +47,6 @@ $total_bookmarked = $select_bookmark->rowCount();
       </div>
 
       <div class="box-container">
-
-         <div class="box">
-            <div class="flex">
-               <i class="fas fa-bookmark"></i>
-               <div>
-                  <h3><?= $total_bookmarked; ?></h3>
-                  <span>Playlist tersimpan</span>
-               </div>
-            </div>
-            <a href="#" class="inline-btn">Lihat playlist</a>
-         </div>
-
          <div class="box">
             <div class="flex">
                <i class="fas fa-heart"></i>

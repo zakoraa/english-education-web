@@ -15,32 +15,6 @@ if(isset($_GET['get_id'])){
    header('location:home.php');
 }
 
-if(isset($_POST['save_list'])){
-
-   if($user_id != ''){
-      
-      $list_id = $_POST['list_id'];
-      $list_id = filter_var($list_id, FILTER_SANITIZE_STRING);
-
-      $select_list = $conn->prepare("SELECT * FROM `bookmark` WHERE user_id = ? AND playlist_id = ?");
-      $select_list->execute([$user_id, $list_id]);
-
-      if($select_list->rowCount() > 0){
-         $remove_bookmark = $conn->prepare("DELETE FROM `bookmark` WHERE user_id = ? AND playlist_id = ?");
-         $remove_bookmark->execute([$user_id, $list_id]);
-         $message[] = 'Playlist dihapus!';
-      }else{
-         $insert_bookmark = $conn->prepare("INSERT INTO `bookmark`(user_id, playlist_id) VALUES(?,?)");
-         $insert_bookmark->execute([$user_id, $list_id]);
-         $message[] = 'Playlist disimpan!';
-      }
-
-   }else{
-      $message[] = 'Silakan Login terlebih dahulu!';
-   }
-
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -85,27 +59,9 @@ if(isset($_POST['save_list'])){
             $select_tutor = $conn->prepare("SELECT * FROM `tutors` WHERE id = ? LIMIT 1");
             $select_tutor->execute([$fetch_playlist['tutor_id']]);
             $fetch_tutor = $select_tutor->fetch(PDO::FETCH_ASSOC);
-
-            $select_bookmark = $conn->prepare("SELECT * FROM `bookmark` WHERE user_id = ? AND playlist_id = ?");
-            $select_bookmark->execute([$user_id, $playlist_id]);
-
       ?>
 
       <div class="col">
-         <form action="" method="post" class="save-list">
-            <input type="hidden" name="list_id" value="<?= $playlist_id; ?>">
-            <?php
-               if($select_bookmark->rowCount() > 0){
-            ?>
-            <button type="submit" name="save_list"><i class="fas fa-bookmark"></i><span>Simpan</span></button>
-            <?php
-               }else{
-            ?>
-               <button type="submit" name="save_list"><i class="far fa-bookmark"></i><span>Simpan playlist</span></button>
-            <?php
-               }
-            ?>
-         </form>
          <div class="thumb">
             <span><?= $total_videos; ?> Video</span>
             <img src="uploaded_files/<?= $fetch_playlist['thumb']; ?>" alt="">
