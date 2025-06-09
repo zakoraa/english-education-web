@@ -201,34 +201,6 @@ section{
    font-weight: bolder;
 }
 
-.header .flex .search-form{
-   width: 50rem;
-   border-radius: .5rem;
-   display: flex;
-   align-items: center;
-   gap: 2rem;
-   padding: 1.5rem 2rem;
-   background-color: var(--light-bg);
-}
-
-.header .flex .search-form input{
-   width: 100%;
-   background:none;
-   font-size: 2rem;
-   color: var(--black);
-}
-
-.header .flex .search-form button{
-   font-size: 2rem;
-   color: var(--black);
-   cursor: pointer;
-   background: none;
-}
-
-.header .flex .search-form button:hover{
-   color: var(--main-color);
-}
-
 .header .flex .icons div{
    font-size: 2rem;
    color: var(--black);
@@ -1398,21 +1370,6 @@ section{
 
    #search-btn{
       display: inline-block;
-   }
-
-   .header .flex .search-form{
-      position: absolute;
-      top:99%; left: 0; right: 0;
-      width: auto;
-      border-top: var(--border);     
-      border-bottom: var(--border);
-      background-color: var(--white);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      transition: .2s linear;
-   }
-
-   .header .flex .search-form.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
    }
 
    .form-container .flex{
