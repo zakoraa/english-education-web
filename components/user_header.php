@@ -15,7 +15,7 @@ if(isset($message)){
 
    <section class="flex">
 
-      <a href="home.php" class="logo">Edukasi Bahasa Inggris.</a>
+      <a href="index.php" class="logo">Edukasi Bahasa Inggris.</a>
 
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
@@ -91,7 +91,7 @@ if(isset($message)){
       </div>
 
    <nav class="navbar">
-      <a href="home.php"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="index.php"><i class="fas fa-home"></i><span>Home</span></a>
       <a href="about.php"><i class="fas fa-question"></i><span>Tentang kami</span></a>
       <a href="courses.php"><i class="fas fa-graduation-cap"></i><span>Materi</span></a>
       <a href="teachers.php"><i class="fas fa-chalkboard-user"></i><span>Guru</span></a>
